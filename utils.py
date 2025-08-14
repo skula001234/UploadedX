@@ -98,11 +98,12 @@ async def progress_bar(current, total, reply, start):
             
             try:
                 await reply.edit(
-f"**📩 {perc} {progress_bar} **\n\n"
+f"**💌 {progress_bar} {perc}**\n\n"
 f"**🚀 ꜱᴘᴅ:** `{sp}` \n"
 f"**📬 ғɪʟᴇ:** `{cur}` / `{tot}`\n"
 f"**⏰ ᴇᴛᴀ:** `{eta}`"
 )
             except FloodWait as e:
                 time.sleep(e.x)
+
 
