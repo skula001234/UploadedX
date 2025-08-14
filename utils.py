@@ -89,7 +89,7 @@ async def progress_bar(current, total, reply, start):
             remaining_length = bar_length - completed_length
 
             symbol_pairs = [
-                ("█", "░"),
+                ("`█`", "`░`"),
             ]
             chosen_pair = symbol_pairs[0]
             completed_symbol, remaining_symbol = chosen_pair
@@ -105,5 +105,6 @@ f"**⏰ ᴇᴛᴀ:** `{eta}`"
 )
             except FloodWait as e:
                 time.sleep(e.x)
+
 
 
