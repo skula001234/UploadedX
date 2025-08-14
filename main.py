@@ -670,14 +670,14 @@ async def txt_handler(bot: Client, m: Message):
         b_name = raw_text0
 
     await editable.edit(
-    "╭━━━『 📺 Choose Your Resolution 』━━━╮\n"
-    "┃ 🔸 `144` ┃ \n"
-    "┃ 🔸 `240` ┃ \n"
-    "┃ 🔸 `360` ┃ \n"
-    "┃ 🔸 `480` ┃ \n"
-    "┃ 🔸 `720` ┃ \n"
-    "┃ 🔸 `1080`┃ \n"
-    "╰━━━⌈ ⚡ By 🂾 ⌯ FʀᴏɴᴛMᴀɴ ⌋━━━╯"
+    "**╭━━━『 💿 Choose Your Resolution 』━━━╮**\n"
+    "**┃ 🔻**  `144`  \n"
+    "**┃ 🔻**  `240`  \n"
+    "**┃ 🔻**  `360`  \n"
+    "**┃ 🔻**  `480`  \n"
+    "**┃ 🔻**  `720`  \n"
+    "**┃ 🔻** `1080`  \n"
+    "**╰━━━⌈ 🤖 By 🂾 ⌯ FʀᴏɴᴛMᴀɴ ⌋━━━╯**"
 )
 
     input2: Message = await bot.listen(editable.chat.id)
@@ -850,7 +850,10 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n\n**🎞️ Tɪᴛʟᴇ :** `{name1} [{res}p] .mkv`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                cc = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n\n' \
+        f'**🎞️ Tɪᴛʟᴇ :** `{name1} [{res}p] .mkv`\n\n' \
+        f'<blockquote>📚 𝗕ᴀᴛᴄʜ : {b_name}</blockquote>\n\n' \
+        f'**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
                 cc1 = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n\n**📑 Tɪᴛʟᴇ :** `{name1} .pdf`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
                 cczip = f'[——— ✦ {str(count).zfill(3)} ✦ ———]({link0})\n\n' \
         f'**🆔 𝑍𝐼𝑃 𝑰𝑑 :** `{count}`\n' \
