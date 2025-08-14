@@ -300,7 +300,7 @@ async def download_video(url,cmd, name):
 
 
 async def send_doc(bot: Client, m: Message, cc, ka, cc1, prog, count, name):
-    reply = await m.reply_text(f"**Fast Uploading..)\n\n {name}**")
+    reply = await m.reply_text(f"**🏮 𝗙𝗮𝘀𝘁 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...)**")
     time.sleep(1)
     start_time = time.time()
     await bot.send_document(ka, caption=cc1)
@@ -337,7 +337,7 @@ async def download_and_decrypt_video(url, cmd, name, key):
 async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog, reply_markup=None):
     subprocess.run(f'ffmpeg -i "{filename}" -ss 00:00:10 -vframes 1 "{filename}.jpg"', shell=True)
     await prog.delete (True)
-    reply = await m.reply_text(f"**Fast Uploading..)\n{name}**")
+    reply = await m.reply_text(f"**🏮 𝗙𝗮𝘀𝘁 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...)**")
     try:
         if thumb == "/d":
             thumbnail = f"{filename}.jpg"
