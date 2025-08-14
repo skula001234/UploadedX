@@ -42,7 +42,7 @@ import database
 from config import ADMIN_IDS
 
 # Define admin IDs
-ADMIN_IDS = [7521967798]  # Add your admin IDs here
+ADMIN_IDS = [7793257011]  # Add your admin IDs here
 
 # Helper function to decrypt files
 def decrypt_file_txt(file_path: str) -> str:
@@ -82,15 +82,11 @@ BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="👨‍💻 O
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="👑 Owner", url="https://t.me/Dhruv10081"),
-            InlineKeyboardButton(text="⚡ Support", url="https://t.me/+-2wNw4cIjQo1Yjhh"),
+            InlineKeyboardButton(text="⌯ FʀᴏɴᴛMᴀɴ | ×͜× |", callback_data="help_command"),
         ],
         [
-            InlineKeyboardButton(text="🎯 Help", callback_data="help_command"),
-            InlineKeyboardButton(text="✨ Features", callback_data="features"),
-        ],
-        [
-            InlineKeyboardButton(text="📢 Channel", url="https://t.me/+-2wNw4cIjQo1Yjhh"),
+            InlineKeyboardButton(text="🪔", callback_data="help_commandd"),
+            InlineKeyboardButton(text="🦋", callback_data="featuress"),
         ],
     ]
 )
@@ -380,9 +376,9 @@ async def start_command(bot: Client, message: Message):
         image_url = photologo
     
     caption = (
-    f"╭━━━〔 🎯 **𝗪𝗘𝗟𝗖𝗢𝗠𝗘** 〕━━━╮\n"
+    f"╭━━━━━━━━━━━━━━━━╮\n"
     f"┃ 👋 ʜᴇʏ {message.from_user.mention} ❤️\n"
-    f"┃ ✨ ɪ'ᴍ ʏᴏᴜʀ DHRUV ᴅʀᴍ ᴡɪᴢᴀʀᴅ!\n"
+    f"┃ ✨ ɪ'ᴍ ʏᴏᴜʀ ᴅʀᴍ ᴡɪᴢᴀʀᴅ!\n"
     f"╰━━━━━━━━━━━━━━━━━━╯\n\n"
     f"💎 **ꜰᴇᴀᴛᴜʀᴇꜱ ʏᴏᴜ'ʟʟ ʟᴏᴠᴇ:**\n\n"
     f"🔓 • **ᴀᴜᴛᴏ ᴅʀᴍ ᴅᴇᴄʀʏᴘᴛɪᴏɴ**\n"
@@ -391,9 +387,8 @@ async def start_command(bot: Client, message: Message):
     f"🚀 • **ᴜʟᴛʀᴀ-ꜰᴀꜱᴛ ꜱᴘᴇᴇᴅ**\n\n"
     f"➜ `ꜱᴇɴᴅ ᴍᴇ .ᴛxᴛ ꜰɪʟᴇ ᴛᴏ ꜱᴛᴀʀᴛ`\n"
     f"➜ `ᴄʜᴏᴏꜱᴇ Qᴜᴀʟɪᴛʏ & ᴇɴᴊᴏʏ!`\n\n"
-    f"💰 **Pricing:**\n\n"
-    f"💵 <pre>**₹130 / Week** for Personal Downloader</pre>\n\n"
-    f"⚡ **ᴘᴏᴡᴇʀᴇᴅ ʙʏ** [@Dhruv10081](https://t.me/Dhruv10081)"
+    f" <pre>**💰 ₹400 / Week** for Personal Downloader</pre>\n\n"
+    f"⚡ **ᴘᴏᴡᴇʀᴇᴅ ʙʏ** [⌯ FʀᴏɴᴛMᴀɴ | ×͜× |](https://t.me/mrfrontman001)"
 )
 
     
@@ -429,7 +424,7 @@ async def info(bot: Client, update: Message):
         reply_markup=BUTTONSCONTACT
     )
 
-@bot.on_message(filters.command(["help"]))
+@bot.on_message(filters.command(["helper"]))
 async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text=(
     f"╭━━━〔 💥 🂾 𝗠ʀ DHRUV 𝗕𝗢𝗧𝗦 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 〕━━━╮\n"
@@ -467,7 +462,7 @@ async def txt_handler(client: Client, m: Message):
     f"• **ʙᴏᴛ ᴍᴜꜱᴛ ʙᴇ ᴀᴅᴍɪɴ ɪɴ ᴄʜᴀᴛꜱ**\n"
     f"• **ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ ꜰᴏʀ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴜꜱᴇʀꜱ ᴏɴʟʏ**\n\n"  
     f"╭────────⊰◆⊱────────╮\n"   
-    f" ➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : [🂾 Mʀ DHRUV 𝗕𝗢𝗧𝗦](https://t.me/Dhruv10081) 💻\n"
+    f" **➠ 𝐌𝐚𝐝𝐞 𝐁𝐲 : @MrFrontMan001**\n"
     f"╰────────⊰◆⊱────────╯\n"
     )
     )
@@ -531,9 +526,9 @@ async def check_subscription(message):
                     "┣⪼ ❌ 𝐍𝐨𝐭 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞𝐝\n"
                     "╰━━━━━━━━━━━━━━━━━╯\n\n"
                     "╭─────────────────\n"
-                    "┣⪼ 📌 𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐨𝐧𝐭𝐚𝐜𝐭\n"
-                    "┣⪼ 👤 @Dhruv10081\n"
-                    "┣⪼ 💫 𝐅𝐨𝐫 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧\n"
+                    "┣⪼ **📌 𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐨𝐧𝐭𝐚𝐜𝐭**\n"
+                    "┣⪼ **👤 @MrFrontMan001**\n"
+                    "┣⪼ **💫 𝐅𝐨𝐫 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧**\n"
                     "╰─────────────────"
                 )
                 return False
@@ -556,9 +551,9 @@ async def check_subscription(message):
                     "┣⪼ ❌ 𝐔𝐧𝐚𝐮𝐭𝐡𝐨𝐫𝐢𝐳𝐞𝐝 𝐂𝐡𝐚𝐭\n"
                     "╰━━━━━━━━━━━━━━━━━╯\n\n"
                     "╭─────────────────\n"
-                    "┣⪼ 📌 𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐨𝐧𝐭𝐚𝐜𝐭\n"
-                    "┣⪼ 👤 @Dhruv10081\n"
-                    "┣⪼ 💫 𝐅𝐨𝐫 𝐀𝐮𝐭𝐡𝐨𝐫𝐢𝐳𝐚𝐭𝐢𝐨𝐧\n"
+                    "┣⪼ **📌 𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐨𝐧𝐭𝐚𝐜𝐭**\n"
+                    "┣⪼ "*👤 @MrFrontMan001**\n"
+                    "┣⪼ **💫 𝐅𝐨𝐫 𝐀𝐮𝐭𝐡𝐨𝐫𝐢𝐳𝐚𝐭𝐢𝐨𝐧**\n"
                     "╰─────────────────"
                 )
                 return False
@@ -571,9 +566,9 @@ async def check_subscription(message):
             "┣⪼ ⚠️ 𝐄𝐫𝐫𝐨𝐫 𝐜𝐡𝐞𝐜𝐤𝐢𝐧𝐠 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧\n"
             "╰━━━━━━━━━━━━━━━━━╯\n\n"
             "╭─────────────────\n"
-            "┣⪼ 📌 𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐨𝐧𝐭𝐚𝐜𝐭\n"
-            "┣⪼ 👤 @Dhruv10081\n"
-            "┣⪼ 💫 𝐅𝐨𝐫 𝐬𝐮𝐩𝐩𝐨𝐫𝐭\n"
+            "┣⪼ **📌 𝐏𝐥𝐞𝐚𝐬𝐞 𝐜𝐨𝐧𝐭𝐚𝐜𝐭**\n"
+            "┣⪼ **👤 @MrFrontMan001**\n"
+            "┣⪼ **💫 𝐅𝐨𝐫 𝐬𝐮𝐩𝐩𝐨𝐫𝐭**\n"
             "╰─────────────────"
         )
         return False
@@ -585,7 +580,7 @@ async def txt_handler(bot: Client, m: Message):
         return
         
     editable = await m.reply_text(
-    "╭━〔 🎯 🂾 DHRUV 𝗗𝗥𝗠 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿 〕━╮\n"
+    "╭━〔 📬 𝗗𝗥𝗠 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿 〕━╮\n"
     "┃\n"
     "┃ ⪼ 📤 **sᴇɴᴅ ʏᴏᴜʀ ᴛᴇxᴛ ꜰɪʟᴇ**\n"
     "┃ ⪼ 📝 **ɪ'ʟʟ ᴘʀᴏᴄᴇꜱꜱ ɪᴛ ꜰᴏʀ ʏᴏᴜ**\n"
@@ -681,8 +676,8 @@ async def txt_handler(bot: Client, m: Message):
     "┃ 🔸 `360` ┃ \n"
     "┃ 🔸 `480` ┃ \n"
     "┃ 🔸 `720` ┃ \n"
-    "┃ 🔸 1080┃ \n"
-    "╰━━━⌈ ⚡ By 🂾 DHRUV  ⌋━━━╯"
+    "┃ 🔸 `1080`┃ \n"
+    "╰━━━⌈ ⚡ By 🂾 ⌯ FʀᴏɴᴛMᴀɴ ⌋━━━╯"
 )
 
     input2: Message = await bot.listen(editable.chat.id)
@@ -717,7 +712,7 @@ async def txt_handler(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     if raw_text3 == '1':
-        CR = '[🂾 DHRUV](https://t.me/Dhruv10081)'
+        CR = '[ ⌯ FʀᴏɴᴛMᴀɴ | ×͜× |](https://t.me/Mrfrontman001)'
     else:
         CR = raw_text3
 
@@ -861,18 +856,8 @@ async def txt_handler(bot: Client, m: Message):
         f'**├── 𝑅𝑒𝑠𝑜𝑙𝑢𝑡𝑖𝑜𝑛 :** [{res}]\n\n' \
         f'**📚 𝐶𝑜𝑢𝑟𝑠𝑒 :** {b_name}\n\n' \
         f'**🌟 𝐸𝑥𝑡𝑟𝑎𝑐𝑡𝑒𝑑 𝐵𝑦 :** {CR}'
-                ccimg = f'[——— ✦ {str(count).zfill(3)} ✦ ———]({link0})\n\n' \
-        f'**🆔 𝐼𝑚𝑎𝑔𝑒 𝑰𝑑 :** `{count}`\n' \
-        f'**🖼️ 𝑇𝑖𝑡𝑙𝑒 :** `{name1}`\n' \
-        f'**├── 𝑅𝑒𝑠𝑜𝑙𝑢𝑡𝑖𝑜𝑛 :** [{res}]\n\n' \
-        f'**📚 𝐶𝑜𝑢𝑟𝑠𝑒 :** {b_name}\n\n' \
-        f'**🌟 𝐸𝑥𝑡𝑟𝑎𝑐𝑡𝑒𝑑 𝐵𝑦 :** {CR}'
-                ccm = f'[——— ✦ {str(count).zfill(3)} ✦ ———]({link0})\n\n' \
-      f'**🆔 𝑀𝑃3 𝑰𝑑 :** `{count}`\n' \
-      f'**🎵 𝑇𝑖𝑡𝑙𝑒 :** `{name1}`\n' \
-      f'**├── 𝑅𝑒𝑠𝑜𝑙𝑢𝑡𝑖𝑜𝑛 :** [{res}]\n\n' \
-      f'**📚 𝐶𝑜𝑢𝑟𝑠𝑒 :** {b_name}\n\n' \
-      f'**🌟 𝐸𝑥𝑡𝑟𝑎𝑐𝑡𝑒𝑑 𝐵𝑦 :** {CR}'
+                ccimg = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n\n**🖼️ Tɪᴛʟᴇ :** `{name1} [{res}p] .mkv`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                ccm = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n\n**🎞️ Tɪᴛʟᴇ :** `{name1} [{res}p] .mkv`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
                 cchtml = f'[——— ✦ {str(count).zfill(3)} ✦ ———]({link0})\n\n' \
          f'**🆔 𝐻𝑇𝑀𝐿 𝑰𝑑 :** `{count}`\n' \
          f'**🌐 𝑇𝑖𝑡𝑙𝑒 :** `{name1}`\n' \
@@ -1018,7 +1003,7 @@ async def txt_handler(bot: Client, m: Message):
                            f"┃ 🖇️ **ᴀᴘɪ ᴜʀʟ**: <a href='{url}'>ᴀᴘɪ ʟɪɴᴋ</a>\n" \
                            f"━━━━━━━━━━━━━━━━━━━━━━━\n" \
                            f"🛑 **sᴇɴᴅ** /stop **ᴛᴏ ᴄᴀɴᴄᴇʟ**\n\n" \
-                           f"╰━━━━━ ✦ 𝐵𝑜𝓉 𝓂𝒶𝒹𝑒 𝒷𝓎 ✦ [🂾 DHRUV 𝗯𝗼𝘁𝘀](https://t.me/Dhruv10081)"
+                           f"╰━━━━━ ✦ 𝐵𝑜𝓉 𝓂𝒶𝒹𝑒 𝒷𝓎 ✦ @MrFrontMan001"
 
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     try:
@@ -1064,7 +1049,7 @@ async def txt_handler(bot: Client, m: Message):
                            f"┃ 🖇️ **ᴀᴘɪ ᴜʀʟ**: <a href='{url}'>ᴀᴘɪ ʟɪɴᴋ</a>\n" \
                            f"━━━━━━━━━━━━━━━━━━━━━━━\n" \
                            f"🛑 **sᴇɴᴅ** /stop **ᴛᴏ ᴄᴀɴᴄᴇʟ**\n\n" \
-                           f"╰━━━━━ ✦ 𝐵𝑜𝓉 𝓂𝒶𝒹𝑒 𝒷𝓎 ✦ [🂾 DHRUV 𝗯𝗼𝘁𝘀](https://t.me/Dhruv10081)"
+                           f"**╰━━━━━ ✦ 𝐵𝑜𝓉 𝓂𝒶𝒹𝑒 𝒷𝓎 ✦ @MrFrontMan001**"
 
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     try:
@@ -1110,7 +1095,7 @@ async def txt_handler(bot: Client, m: Message):
                            f"┃ 🖇️ **ᴀᴘɪ ᴜʀʟ**: <a href='{url}'>ᴀᴘɪ ʟɪɴᴋ</a>\n" \
                            f"━━━━━━━━━━━━━━━━━━━━━━━\n" \
                            f"🛑 **sᴇɴᴅ** /stop **ᴛᴏ ᴄᴀɴᴄᴇʟ**\n\n" \
-                           f"╰━━━━━ ✦ 𝐵𝑜𝓉 𝓂𝒶𝒹𝑒 𝒷𝓎 ✦ [🂾 DHRUV 𝗯𝗼𝘁𝘀](https://t.me/Dhruv10081)"
+                           f"╰━━━━━ ✦ 𝐵𝑜𝓉 𝓂𝒶𝒹𝑒 𝒷𝓎 ✦ @MrFrontMan001"
                     
                     prog = await m.reply_text(Show, disable_web_page_preview=True)
                     try:
