@@ -764,14 +764,20 @@ async def txt_handler(bot: Client, m: Message):
         f'**🎞️ Tɪᴛʟᴇ :** `{name1} [{res}p] .mkv`\n\n' \
         f'<pre>📚 𝗕ᴀᴛᴄʜ : {b_name}</pre>\n\n' \
         f'**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
-                cc1 = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n\n**📑 Tɪᴛʟᴇ :** `{name1} .pdf`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                cc1 = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n\n' \
+        f'**📑 Tɪᴛʟᴇ :** `{name1}.pdf`\n\n' \
+        f'<pre>📚 𝗕ᴀᴛᴄʜ : {b_name}</pre>\n\n' \
+        f'**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
                 cczip = f'[——— ✦ {str(count).zfill(3)} ✦ ———]({link0})\n\n' \
         f'**🆔 𝑍𝐼𝑃 𝑰𝑑 :** `{count}`\n' \
         f'**📁 𝑇𝑖𝑡𝑙𝑒 :** `{name1}`\n' \
         f'**├── 𝑅𝑒𝑠𝑜𝑙𝑢𝑡𝑖𝑜𝑛 :** [{res}]\n\n' \
         f'**📚 𝐶𝑜𝑢𝑟𝑠𝑒 :** {b_name}\n\n' \
         f'**🌟 𝐸𝑥𝑡𝑟𝑎𝑐𝑡𝑒𝑑 𝐵𝑦 :** {CR}'
-                ccimg = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n\n**🖼️ Tɪᴛʟᴇ :** `{name1} [{res}p] .mkv`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
+                ccimg = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n\n' \
+        f'**🖼️ Tɪᴛʟᴇ :** `{name1}`\n\n' \
+        f'<pre>📚 𝗕ᴀᴛᴄʜ : {b_name}</pre>\n\n' \
+        f'**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
                 ccm = f'**🏷️ Fɪʟᴇ ID :**  {str(count).zfill(3)}\n\n**🎞️ Tɪᴛʟᴇ :** `{name1} [{res}p] .mkv`\n\n<blockquote><b>📚 𝗕ᴀᴛᴄʜ :</b> {b_name}</blockquote>\n\n**🎓 Exᴛʀᴀᴄᴛ Bʏ : {CR}**\n'
                 cchtml = f'[——— ✦ {str(count).zfill(3)} ✦ ———]({link0})\n\n' \
          f'**🆔 𝐻𝑇𝑀𝐿 𝑰𝑑 :** `{count}`\n' \
