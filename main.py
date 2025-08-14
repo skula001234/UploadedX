@@ -296,7 +296,7 @@ async def help_button(client, callback_query):
     )
 
 
-@bot.on_callback_query(filters.regex("features"))
+@bot.on_callback_query(filters.regex("featuress"))
 async def features_button(client, callback_query):
     # Bot DRM Services
     await callback_query.answer(
@@ -320,7 +320,7 @@ async def start_command(bot: Client, message: Message):
     f"┃ ✨ ʜᴇʏ {message.from_user.mention} ❤️\n"
     f"┃ 🦎 ɪ'ᴍ ʏᴏᴜʀ ᴅʀᴍ ᴡɪᴢᴀʀᴅ!\n"
     f"╰━━━━━━━━━━━━━━━━━━━━╯\n\n"
-    f"<pre>💎 **ꜰᴇᴀᴛᴜʀᴇꜱ ʏᴏᴜ'ʟʟ ʟᴏᴠᴇ:\n\n ➜ 🔓 • ᴀᴜᴛᴏ ᴅʀᴍ ᴅᴇᴄʀʏᴘᴛɪᴏɴ\n ➜ ⚡ • ᴘʀᴇᴍɪᴜᴍ Qᴜᴀʟɪᴛʏ\n ➜ 📚 • ʙᴀᴛᴄʜ ꜱᴜᴘᴘᴏʀᴛ\n ➜ 🚀 • ᴜʟᴛʀᴀ-ꜰᴀꜱᴛ ꜱᴘᴇᴇᴅ**</pre>"
+    f"<blockquote expandable>💎 **ꜰᴇᴀᴛᴜʀᴇꜱ ʏᴏᴜ'ʟʟ ʟᴏᴠᴇ:\n\n ➜ 🔓 • ᴀᴜᴛᴏ ᴅʀᴍ ᴅᴇᴄʀʏᴘᴛɪᴏɴ\n ➜ ⚡ • ᴘʀᴇᴍɪᴜᴍ Qᴜᴀʟɪᴛʏ\n ➜ 📚 • ʙᴀᴛᴄʜ ꜱᴜᴘᴘᴏʀᴛ\n ➜ 🚀 • ᴜʟᴛʀᴀ-ꜰᴀꜱᴛ ꜱᴘᴇᴇᴅ**</blockquote> "
     f" **💰 ₹400 / Week** for Personal Downloader\n\n"
 )
 
