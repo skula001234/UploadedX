@@ -89,7 +89,7 @@ async def progress_bar(current, total, reply, start):
             remaining_length = bar_length - completed_length
 
             symbol_pairs = [
-                ("🟩", "⬜️"),
+                ("█", "░"),
             ]
             chosen_pair = symbol_pairs[0]
             completed_symbol, remaining_symbol = chosen_pair
@@ -98,11 +98,11 @@ async def progress_bar(current, total, reply, start):
             
             try:
                 await reply.edit(
-f"Pʀᴏɢʀᴇss: {progress_bar} {perc}\n"
-f"⚡️ Sᴘᴇᴇᴅ: {sp}\n"
-f"📂 Pʀᴏᴄᴇssᴇᴅ: {cur} / {tot}\n"
-f"⏳ Eᴛᴀ: {eta}\n\n"
-f"⚡️ Pᴏᴡᴇʀᴇᴅ ʙʏ 🂾 Mʀ DHRUV"
+f"**📩 {perc} {progress_bar} **\n\n"
+f"**🚀 ꜱᴘᴅ:** `{sp}` \n"
+f"**📬 ғɪʟᴇ:** `{cur}` / `{tot}`\n"
+f"**⏰ ᴇᴛᴀ:** `{eta}`"
 )
             except FloodWait as e:
                 time.sleep(e.x)
+
